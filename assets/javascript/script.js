@@ -1,4 +1,4 @@
-const topics = [];
+const topics = ["cat","dog","rat","snake"];
 
 function updateButtons() {
     $("#button-holder").empty();
@@ -44,6 +44,7 @@ function playOrPauseGif() {
 }
 
 $(document).ready(() => {
+    updateButtons();
     $(document).on("click", ".topicButton", addGifs);
     $("#addButton").click((event)=> {
         event.preventDefault();
